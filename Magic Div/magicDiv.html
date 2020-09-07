@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="divImage">
+        <img id="imagen" src="./images/miami.jpg" alt="">
+    </div>
+    <div id="magic" class="magico"></div>
+    <script >
+    window.onload=function(){
+        var $magic = document.querySelector("#magic")
+        $magic.addEventListener("mouseover", function(){
+            var $image = document.querySelector("#divImage")
+            $image.style.display = "none"
+    
+        })
+        $magic.addEventListener("mouseleave", function(){
+            var $image = document.querySelector("#divImage")
+            $image.style.display = "block"
+    
+        })
+    }
+    
+    </script>
+</body>
+</html>
